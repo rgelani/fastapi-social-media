@@ -14,9 +14,9 @@ jobs:
         uses: snok/install-poetry@v1
       - name: Poetry Install
         run: poetry install --no-root
-      - name: Run Feed Generator
-        run: |
-          uv run feed.py
+      # - name: Run Feed Generator
+      #   run: |
+      #     uv run feed.py
       - name: Run Uvicorn server in background
         run: |
           uv run main.py
